@@ -1,4 +1,4 @@
-import ApplicationConfiguration from './ApplicationConfiguration';
+import ApplicationConfiguration from '../application/ApplicationConfiguration';
 
 export default class ApplicationLogger {
 	static #isEnabled = true;
