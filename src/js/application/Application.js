@@ -1,8 +1,9 @@
+/* global APPLICATION_VERSION */
+
 export default class Application {
+	// _________________________________________________________________________
 
-    // _________________________________________________________________________
-
-    constructor() {
-    }
-
+	constructor() {
+		console.log(`Application ${APPLICATION_VERSION}`);
+	}
 }

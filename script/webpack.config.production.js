@@ -1,4 +1,9 @@
-const { outputConfig, optimisationConfig, moduleConfig, pluginsConfig } = require('./webpack.config.common.js');
+const {
+	outputConfig,
+	optimisationConfig,
+	moduleConfig,
+	pluginsConfig,
+} = require('./webpack.config.common');
 
 module.exports = {
 	mode: 'production',
@@ -6,8 +11,8 @@ module.exports = {
 
 	entry: './src/js/index.js',
 
-    output: outputConfig,
+	output: outputConfig,
 	optimization: optimisationConfig,
-    module: moduleConfig,
-    plugins: pluginsConfig,
+	module: moduleConfig,
+	plugins: pluginsConfig,
 };
