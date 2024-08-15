@@ -1,13 +1,19 @@
+import Director from '../director/Director';
+
 export default class Controller {
+	#DIRECTOR;
+
 	// _________________________________________________________________________
 
 	constructor() {
-		// TODO
+		// Create Director
+		this.#DIRECTOR = new Director();
 	}
 
 	// ____________________________________________________________________ Tick
 
 	tick(frameDeltaMS) {
-		// TODO
+		// Tick Director
+		this.#DIRECTOR.tick(frameDeltaMS);
 	}
 }
