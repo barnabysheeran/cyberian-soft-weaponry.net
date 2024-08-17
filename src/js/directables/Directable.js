@@ -5,5 +5,9 @@
 */
 
 export default class Directable {
+	LOG_LEVEL = 3;
+
+	// ___________________________________________________________________________
+
 	constructor() {}
 }

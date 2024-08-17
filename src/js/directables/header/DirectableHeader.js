@@ -1,3 +1,4 @@
+import ApplicationLogger from '../../application-logger/ApplicationLogger';
 import Directable from '../Directable';
 
 export default class DirectableHeader extends Directable {
@@ -5,6 +6,8 @@ export default class DirectableHeader extends Directable {
 
 	constructor() {
 		super();
+
+		ApplicationLogger.log('DirectableHeader', this.LOG_LEVEL);
 	}
 
 	// _________________________________________________________ Set Header Text
