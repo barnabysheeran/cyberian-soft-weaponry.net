@@ -14,7 +14,8 @@ export default class Director {
 
 	tick(frameDeltaMS) {
 		// Tick Directors
-		for(let i=0; i<this.#DIRECTORS.length; i++) {
+		for (let i = 0; i < this.#DIRECTORS.length; i += 1) {
 			this.#DIRECTORS[i].tick(frameDeltaMS);
+		}
 	}
 }
