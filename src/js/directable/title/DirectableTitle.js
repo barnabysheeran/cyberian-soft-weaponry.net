@@ -1,19 +1,19 @@
 import ApplicationLogger from '../../application-logger/ApplicationLogger';
 import Directable from '../Directable';
 
-export default class DirectableHeader extends Directable {
+export default class DirectableTitle extends Directable {
 	// _________________________________________________________________________
 
 	constructor() {
 		super();
 
-		ApplicationLogger.log('DirectableHeader', this.LOG_LEVEL);
+		ApplicationLogger.log('DirectableTitle', this.LOG_LEVEL);
 	}
 
-	// _________________________________________________________ Set Header Text
+	// ________________________________________________________________ Set Text
 
 	/* eslint-disable class-methods-use-this */
-	setHeaderText(text) {
+	setText(text) {
 		document.title = text;
 	}
 }
