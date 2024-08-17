@@ -1,7 +1,7 @@
 /* global APPLICATION_VERSION */
 
 import ApplicationConfiguration from './ApplicationConfiguration';
-import ApplicationLogger from '../application-logger/ApplicationLogger';
+import ApplicationLogger from './ApplicationLogger';
 
 import Controller from '../controller/Controller';
 
