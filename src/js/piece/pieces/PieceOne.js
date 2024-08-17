@@ -1,4 +1,4 @@
-import ApplicationLogger from '../../application-logger/ApplicationLogger';
+import ApplicationLogger from '../../application/ApplicationLogger';
 
 import Piece from '../Piece';
 

@@ -1,8 +1,8 @@
-import ApplicationLogger from '../../application-logger/ApplicationLogger';
+import ApplicationLogger from '../../application/ApplicationLogger';
 
 import Director from '../Director';
 
-import DirectableHeader from '../../directable/directables/title/DirectableTitle';
+import DirectableTitle from '../../directable/directables/title/DirectableTitle';
 import DirectableRhythm from '../../directable/directables/rhythm/DirectableRhythm';
 
 export default class DirectorDanceRabbitDance extends Director {
@@ -17,11 +17,11 @@ export default class DirectorDanceRabbitDance extends Director {
 		ApplicationLogger.log('DirectorDanceRabbitDance', this.LOG_LEVEL);
 
 		// Create Required Directables
-		this.#DIRECTABLE_HEADER = new DirectableHeader();
+		this.#DIRECTABLE_HEADER = new DirectableTitle();
 		this.#DIRECTABLE_RHYTHM = new DirectableRhythm();
 
-		// Set Initial Header
-		this.#DIRECTABLE_HEADER.setText('꒰ ঌᐢ.ˬ.ᐢ໒ ꒱');
+		// Set Initial Title
+		this.#DIRECTABLE_HEADER.setText(' ꒰ ঌᐢ.ˬ.ᐢ໒ ꒱');
 	}
 
 	// ____________________________________________________________________ Tick

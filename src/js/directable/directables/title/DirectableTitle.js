@@ -1,4 +1,5 @@
-import ApplicationLogger from '../../../application-logger/ApplicationLogger';
+import ApplicationLogger from '../../../application/ApplicationLogger';
+
 import Directable from '../../Directable';
 
 export default class DirectableTitle extends Directable {
