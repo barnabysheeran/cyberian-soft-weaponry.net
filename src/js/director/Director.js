@@ -1,3 +1,9 @@
+/*
+
+  Director is a Superclass for all Directors
+
+*/
+
 export default class Director {
 	LOG_LEVEL = 2;
 

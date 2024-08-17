@@ -2,8 +2,8 @@ import ApplicationLogger from '../../application-logger/ApplicationLogger';
 
 import Director from '../Director';
 
-import DirectableHeader from '../../directable/title/DirectableTitle';
-import DirectableRhythm from '../../directable/rhythm/DirectableRhythm';
+import DirectableHeader from '../../directable/directables/title/DirectableTitle';
+import DirectableRhythm from '../../directable/directables/rhythm/DirectableRhythm';
 
 export default class DirectorDanceRabbitDance extends Director {
 	#DIRECTABLE_HEADER;
