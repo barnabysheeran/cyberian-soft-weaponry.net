@@ -1,9 +1,6 @@
 // Import CSS
 import '../css/index.css';
 
-// Import Favicon
-import '../asset/ico/favicon.ico';
-
 // Application
 import Application from './application/Application';
 

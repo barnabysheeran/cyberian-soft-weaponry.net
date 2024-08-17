@@ -70,6 +70,8 @@ const pluginsConfig = [
 		template: 'src/html/index.html',
 		filename: './index.html',
 		inject: false,
+		minify: false,
+		hash: true,
 	}),
 
 	new CopyWebpackPlugin({
