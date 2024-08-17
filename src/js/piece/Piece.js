@@ -1,5 +1,5 @@
-export default class Director {
-	LOG_LEVEL = 2;
+export default class Piece {
+	LOG_LEVEL = 1;
 
 	// _________________________________________________________________________
 

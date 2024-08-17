@@ -1,19 +1,19 @@
-import Director from '../director/Director';
+import PieceOne from '../piece/pieces/PieceOne';
 
 export default class Controller {
-	#DIRECTOR;
+	#PIECE;
 
 	// _________________________________________________________________________
 
 	constructor() {
-		// Create Director
-		this.#DIRECTOR = new Director();
+		// Create Piece
+		this.#PIECE = new PieceOne();
 	}
 
 	// ____________________________________________________________________ Tick
 
 	tick(frameDeltaMS) {
-		// Tick Director
-		this.#DIRECTOR.tick(frameDeltaMS);
+		// Tick Piece
+		this.#PIECE.tick(frameDeltaMS);
 	}
 }
