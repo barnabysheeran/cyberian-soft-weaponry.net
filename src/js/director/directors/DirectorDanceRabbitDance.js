@@ -3,11 +3,11 @@ import ApplicationLogger from '../../application/ApplicationLogger';
 import Director from '../Director';
 
 import DirectableTitle from '../../directable/directables/title/DirectableTitle';
-import DirectableRhythm from '../../directable/directables/rhythm/DirectableRhythm';
+import DirectableRhythmBPM from '../../directable/directables/rhythm/bpm/DirectableRhythmBPM';
 
 export default class DirectorDanceRabbitDance extends Director {
 	#DIRECTABLE_HEADER;
-	#DIRECTABLE_RHYTHM;
+	#DIRECTABLE_RHYTHM_BPM;
 
 	// _________________________________________________________________________
 
@@ -18,7 +18,7 @@ export default class DirectorDanceRabbitDance extends Director {
 
 		// Create Required Directables
 		this.#DIRECTABLE_HEADER = new DirectableTitle();
-		this.#DIRECTABLE_RHYTHM = new DirectableRhythm();
+		this.#DIRECTABLE_RHYTHM_BPM = new DirectableRhythmBPM();
 
 		// Set Initial Title
 		this.#DIRECTABLE_HEADER.setText(' ꒰ ঌᐢ.ˬ.ᐢ໒ ꒱');
