@@ -1,7 +1,7 @@
 import PieceOne from '../piece/pieces/PieceOne';
 
 export default class Controller {
-	#FRAMERATE_FPS = 24;
+	#FRAMERATE_FPS = 2;
 	#FRAMERATE_MS = 1000 / this.#FRAMERATE_FPS;
 
 	#frameRateDelayMS = 0;
@@ -20,8 +20,6 @@ export default class Controller {
 	tick(frameDeltaMS) {
 		// Frame Rate Delay
 		this.#frameRateDelayMS += frameDeltaMS;
-
-		console.log('Controller.tick', frameDeltaMS, this.#frameRateDelayMS);
 
 		// Next Frame ?
 		if (this.#frameRateDelayMS > this.#FRAMERATE_MS) {

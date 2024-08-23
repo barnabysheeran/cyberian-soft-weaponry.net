@@ -8,6 +8,8 @@ import Controller from '../controller/Controller';
 export default class Application {
 	#CONTROLLER;
 
+	#applicationRunTimeMS = 0;
+
 	// _________________________________________________________________________
 
 	constructor(creationParameters) {
@@ -31,9 +33,15 @@ export default class Application {
 
 	// _______________________________________________________________ Main Loop
 
-	#tick(frameDeltaMS) {
+	#tick(applicationRunTimeMS) {
+		// Calculate Application Frame Delta MS
+		const FRAME_DELTA_MS = applicationRunTimeMS - this.#applicationRunTimeMS;
+
+		// Store Application Run Time
+		this.#applicationRunTimeMS = applicationRunTimeMS;
+
 		// Update Controller
-		this.#CONTROLLER.tick(frameDeltaMS);
+		this.#CONTROLLER.tick(FRAME_DELTA_MS);
 
 		// Loop
 		window.requestAnimationFrame(this.#tick.bind(this));
