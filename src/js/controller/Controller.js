@@ -21,7 +21,7 @@ export default class Controller {
 		// Frame Rate Delay
 		this.#frameRateDelayMS += frameDeltaMS;
 
-		// Next Frame ?
+		// Next Frame Rate Frame ?
 		if (this.#frameRateDelayMS > this.#FRAMERATE_MS) {
 			// Reset
 			this.#frameRateDelayMS -= this.#FRAMERATE_MS;
