@@ -10,4 +10,12 @@ export default class DirectableRhythmBPM extends DirectableRhythm {
 
 		ApplicationLogger.log('DirectableRhythmBPM', this.LOG_LEVEL);
 	}
+
+	// ____________________________________________________________________ Tick
+
+	tick(frameDeltaMS) {
+		// Tick DirectableRhythmBPM
+
+		super.tick(frameDeltaMS);
+	}
 }

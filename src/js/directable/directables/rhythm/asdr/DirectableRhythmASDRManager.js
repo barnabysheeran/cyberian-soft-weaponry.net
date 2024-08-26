@@ -1,6 +1,8 @@
 import ApplicationLogger from '../../../../application/ApplicationLogger';
 
 export default class DirectableRhythmASDRManager {
+	#ENVELOPES = [];
+
 	// _________________________________________________________________________
 
 	constructor() {
@@ -9,5 +11,7 @@ export default class DirectableRhythmASDRManager {
 
 	// _____________________________________________________________________ Add
 
-	// TODO
+	addEnvelopeASDR(envelopeASDRData) {
+		// TODO
+	}
 }

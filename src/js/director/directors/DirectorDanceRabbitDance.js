@@ -21,12 +21,14 @@ export default class DirectorDanceRabbitDance extends Director {
 		this.#DIRECTABLE_RHYTHM_BPM = new DirectableRhythmBPM();
 
 		// Set Initial Title
-		this.#DIRECTABLE_HEADER.setText(' ꒰ ঌᐢ.ˬ.ᐢ໒ ꒱');
+		this.#DIRECTABLE_HEADER.setText('꒰ ঌᐢ.ˬ.ᐢ໒ ꒱');
 	}
 
 	// ____________________________________________________________________ Tick
 
 	tick(frameDeltaMS) {
 		// Tick DirectorDanceRabbitDance
+
+		this.#DIRECTABLE_RHYTHM_BPM.tick(frameDeltaMS);
 	}
 }
