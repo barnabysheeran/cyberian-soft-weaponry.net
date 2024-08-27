@@ -11,7 +11,11 @@ export default class Piece {
 
 	constructor() {}
 
+	// ____________________________________________________________________ Tick
+
+	tick(frameDeltaMS) {}
+
 	// _________________________________________________________ Tick Frame Rate
 
-	tickFrameRate(frameDeltaMS) {}
+	tickFrameRate() {}
 }

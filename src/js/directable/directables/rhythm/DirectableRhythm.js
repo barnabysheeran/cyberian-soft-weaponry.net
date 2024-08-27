@@ -7,7 +7,15 @@ export default class DirectableRhythm extends Directable {
 
 	constructor() {
 		super();
-
-		ApplicationLogger.log('DirectableRhythm', this.LOG_LEVEL);
 	}
+
+	// ____________________________________________________________________ Tick
+
+	tick(frameDeltaMS) {
+		super.tick(frameDeltaMS);
+	}
+
+	// ______________________________________________________________ Start Stop
+
+	// TODO
 }
