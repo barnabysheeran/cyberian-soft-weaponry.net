@@ -14,4 +14,8 @@ export default class Piece {
 	// ____________________________________________________________________ Tick
 
 	tick(frameDeltaMS) {}
+
+	// _________________________________________________________ Tick Frame Rate
+
+	tickFrameRate() {}
 }

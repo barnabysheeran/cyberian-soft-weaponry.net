@@ -12,6 +12,9 @@
     "lint:todo": "leasot \"src/**/*.{js,css,html}\" || exit 0",
     "lint": "run-s lint:*"
   },
+  "dependencies": {
+    "three": "^0.167.1"
+  },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.3",
